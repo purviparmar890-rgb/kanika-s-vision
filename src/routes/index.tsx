@@ -31,6 +31,8 @@ function Index() {
           <img
             src={heroImage}
             alt="Close architectural detail of a private aircraft at night"
+            width={1600}
+            height={1200}
             className="h-full w-full object-cover object-center opacity-80 grayscale-[18%]"
           />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,var(--background)_0%,transparent_26%,transparent_72%,var(--background)_100%)] lg:bg-[linear-gradient(90deg,var(--background)_0%,transparent_32%,transparent_80%,var(--background)_100%)]" />
