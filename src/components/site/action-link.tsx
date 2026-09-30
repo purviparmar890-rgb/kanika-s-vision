@@ -1,10 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
+import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 type ActionLinkProps = {
   to: "/speaking" | "/";
-  children: React.ReactNode;
+  children: ReactNode;
   variant?: "solid" | "outline";
   className?: string;
 };
