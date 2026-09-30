@@ -22,7 +22,7 @@ export function HomeHero() {
             Entrepreneur <span className="text-primary">•</span> Aviation <span className="text-primary">•</span> Innovation
           </p>
 
-          <h1 className="mt-8 font-display text-[clamp(3.4rem,14.5vw,11rem)] font-semibold uppercase leading-[0.84] tracking-tight text-foreground lg:text-[clamp(5rem,10.5vw,11rem)]">
+          <h1 className="mt-8 font-display text-[clamp(3.4rem,14.5vw,11rem)] font-semibold uppercase leading-[0.84] tracking-tight text-foreground lg:text-[clamp(5rem,9.6vw,10rem)]">
             <span className="hero-line-mask">
               <span className="hero-rise" style={d(250)}>Kanika</span>
             </span>
