@@ -24,7 +24,7 @@ export function HerStory() {
             <span>Her Story</span>
           </p>
 
-          <h2 className="story-rise mt-10 font-display text-[clamp(2.6rem,6.2vw,5.25rem)] font-semibold uppercase leading-[0.92] tracking-tight text-foreground">
+          <h2 className="story-rise mt-10 font-display text-[clamp(2.6rem,5.4vw,4.25rem)] font-semibold uppercase leading-[0.92] tracking-tight text-foreground">
             A journey built
             <br />
             one <span className="text-primary">decision</span>
