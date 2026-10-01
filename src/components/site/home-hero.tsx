@@ -1,10 +1,10 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, User } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { ActionLink } from "./action-link";
+import heroPortrait from "@/assets/kanika-hero-portrait.png.asset.json";
 import "./hero.css";
 
-/** Replace with an approved portrait import when supplied, e.g. import portrait from "@/assets/kanika-portrait.jpg". */
-const PORTRAIT_SRC: string | null = null;
+const PORTRAIT_SRC: string | null = heroPortrait.url;
 
 const d = (ms: number) => ({ animationDelay: `${ms}ms` });
 
