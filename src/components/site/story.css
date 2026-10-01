@@ -1,0 +1,61 @@
+/* Scroll-reveal animations for the Her Story section.
+   They are scroll-scrubbed where supported; the section stays fully
+   visible everywhere else, so content is never hidden. */
+
+@keyframes story-rise {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes story-unveil {
+  from { clip-path: inset(0 0 100% 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+@keyframes story-line-x {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes story-line-y {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+.story-rise,
+.story-unveil,
+.story-line-x,
+.story-line-y {
+  opacity: 1;
+}
+
+@supports (animation-timeline: view()) {
+  .story-rise {
+    animation: story-rise linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 22%;
+  }
+  .story-unveil {
+    animation: story-unveil linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 34%;
+  }
+  .story-line-x {
+    transform-origin: left;
+    animation: story-line-x linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 24%;
+  }
+  .story-line-y {
+    transform-origin: top;
+    animation: story-line-y linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 24%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .story-rise,
+    .story-unveil,
+    .story-line-x,
+    .story-line-y {
+      animation: none;
+    }
+  }
+}
