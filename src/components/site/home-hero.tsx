@@ -62,20 +62,11 @@ export function HomeHero() {
             <span className="absolute -left-3 -top-3 size-6 border-l border-t border-primary/60" />
 
             <div className="hero-unveil relative aspect-[4/5] overflow-hidden bg-card">
-              {PORTRAIT_SRC ? (
-                <img
-                  src={PORTRAIT_SRC}
-                  alt="Portrait of Kanika Tekriwala"
-                  className="hero-drift h-full w-full object-cover"
-                />
-              ) : (
-                <div className="hero-drift flex h-full w-full flex-col items-center justify-center gap-4 bg-[radial-gradient(ellipse_at_30%_20%,var(--secondary),var(--card)_60%,var(--background))]">
-                  <User strokeWidth={0.6} className="size-24 text-subtle" aria-hidden="true" />
-                  <p className="text-[0.625rem] font-bold uppercase tracking-widest text-subtle">
-                    Approved portrait placeholder
-                  </p>
-                </div>
-              )}
+              <img
+                src={PORTRAIT_SRC}
+                alt="Portrait of Kanika Tekriwala"
+                className="hero-drift h-full w-full object-cover"
+              />
               <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,var(--background)_100%)]" />
             </div>
 
