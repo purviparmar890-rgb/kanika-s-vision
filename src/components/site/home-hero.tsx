@@ -4,7 +4,7 @@ import { ActionLink } from "./action-link";
 import heroPortrait from "@/assets/kanika-hero-portrait.png.asset.json";
 import "./hero.css";
 
-const PORTRAIT_SRC: string | null = heroPortrait.url;
+const PORTRAIT_SRC = heroPortrait.url;
 
 const d = (ms: number) => ({ animationDelay: `${ms}ms` });
 
