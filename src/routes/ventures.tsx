@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { EditorialPage } from "../components/site/editorial-page";
+import { VenturesShowcase } from "../components/site/ventures";
 
 export const Route = createFileRoute("/ventures")({
   head: () => ({ meta: [
@@ -10,5 +10,9 @@ export const Route = createFileRoute("/ventures")({
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
   ] }),
-  component: () => <EditorialPage index="03" eyebrow="Ventures" title="Built with intent" introduction="Selected ventures and the thinking behind them will be presented here once approved." />,
+  component: () => (
+    <main className="min-h-screen overflow-hidden bg-background pt-20 lg:pt-24">
+      <VenturesShowcase />
+    </main>
+  ),
 });
