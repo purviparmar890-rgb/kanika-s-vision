@@ -58,7 +58,7 @@ function PlaceholderImage({ label }: { label: string }) {
 
 export function IdeasSection() {
   return (
-    <section className="border-t border-border bg-background" aria-labelledby="ideas-heading">
+    <section className="border-t border-border bg-background pt-20 lg:pt-24" aria-labelledby="ideas-heading">
       <div className="mx-auto max-w-screen-2xl px-5 py-24 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
         <header className="grid gap-10 border-t border-border pt-5 lg:grid-cols-12 lg:gap-8">
           <div className="min-w-0 lg:col-span-8">
