@@ -5,3 +5,4 @@
 - [x] Add route-specific metadata and verify desktop/mobile presentation.
 - [x] Add and verify the homepage Journey roadmap section.
 - [ ] Add and verify the homepage Ventures section (typography only, no images).
+- [ ] Add and verify the Media page section (typography only, no images).

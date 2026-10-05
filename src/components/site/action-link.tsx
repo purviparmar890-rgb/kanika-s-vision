@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 type ActionLinkProps = {
-  to: "/" | "/about" | "/speaking" | "/ventures";
+  to: "/" | "/about" | "/speaking" | "/ventures" | "/media";
   children: ReactNode;
   variant?: "solid" | "outline";
   className?: string;
